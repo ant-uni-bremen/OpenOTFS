@@ -1,0 +1,25 @@
+name: openotfs
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Simulation framework
+      - sionna==1.2.1
+      - tensorflow==2.21.0
+
+      # Scientific computing
+      - numpy>=1.26,<2.0
+      - scipy==1.17.1
+      - matplotlib==3.10.9
+
+      # Utilities
+      - pyyaml==6.0.3
+      - findpeaks==2.7.5
+
+      # Jupyter notebooks
+      - ipykernel
+      - jupyterlab
